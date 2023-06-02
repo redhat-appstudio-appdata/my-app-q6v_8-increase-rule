@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-mroz
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-mroz
+    app.kubernetes.io/part-of: my-app
+  name: devfile-sample-mroz
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: devfile-sample-mroz
+    weight: null
+status: {}
