@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-mroz
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-user-workloads/psrivast1-tenant/my-app/devfile-sample-mroz@sha256:6e8fbd6d6e5eaffaf5d2e7ef12dc900fc9a26e80cf6303bb105c396f330f6fcc
         name: my-nodejs
         ports:
         - containerPort: 3001
